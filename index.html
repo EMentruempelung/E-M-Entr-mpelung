@@ -4,86 +4,99 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>E&amp;M Entrümpelung – Entrümpelung, Transport, Entsorgung &amp; Gebäudereinigung</title>
-  <meta name="description" content="E&M Entrümpelung – Entrümpelungen, Transporte, Entsorgung und Gebäudereinigung in 53557 Bad Hönningen. Schnell, zuverlässig, diskret. Kostenlose Besichtigung." />
+  <meta name="description" content="E&amp;M Entrümpelung – Entrümpelungen, Transporte, Entsorgung und Gebäudereinigung in 53557 Bad Hönningen. Schnell, zuverlässig, diskret. Kostenlose Besichtigung." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
+  <!-- Kopfbereich -->
+  <header class="header">
     <div class="container">
       <h1>E&amp;M Entrümpelung</h1>
-      <p class="tagline">Entrümpelung • Transport • Entsorgung • Gebäudereinigung</p>
+      <p class="subtitle">Entrümpelung • Transport • Entsorgung • Gebäudereinigung</p>
       <nav class="nav">
-        <a href="#services">Leistungen</a>
-        <a href="#about">Über uns</a>
-        <a href="#pricing">Preise</a>
-        <a href="#contact">Kontakt</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ueber-uns">Über uns</a>
+        <a href="#preise">Preise</a>
+        <a href="#kontakt">Kontakt</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section id="hero" class="hero container">
-      <div>
-        <h2>Schnell. Zuverlässig. Diskret.</h2>
-        <p>Wir räumen auf — Haushalts- und Betriebsauflösungen, Transporte, fachgerechte Entsorgung und Gebäudereinigung im Umkreis von 100 km.</p>
-        <p><strong>Hinweis:</strong> Preise nach Besichtigung. Bei kleineren Aufträgen senden Sie uns gerne Fotos per Website oder WhatsApp.</p>
-        <div class="cta-row">
-          <a class="btn primary" href="mailto:ementruempelung@web.de?subject=Anfrage%20Entr%C3%BCmpelung">E-Mail senden</a>
-          <a class="btn" href="https://wa.me/4915159892963?text=Hallo%20E%26M%20Entr%C3%BCmpelung%2C%20ich%20habe%20eine%20Anfrage" target="_blank" rel="noopener">WhatsApp</a>
-        </div>
+  <!-- Startbereich -->
+  <section class="hero">
+    <div class="container">
+      <h2>Schnell. Zuverlässig. Diskret.</h2>
+      <p>Haushaltsauflösungen, Transporte, fachgerechte Entsorgung und Gebäudereinigung im Umkreis von 100 km.</p>
+      <p><strong>Hinweis:</strong> Preise nach Besichtigung. Bei kleineren Aufträgen können Sie uns auch Fotos per Website oder WhatsApp senden.</p>
+      <div class="aktionen">
+        <a class="btn btn-primary" href="mailto:ementruempelung@web.de?subject=Anfrage%20Entr%C3%BCmpelung">E-Mail senden</a>
+        <a class="btn btn-outline" href="https://wa.me/4915159892963?text=Hallo%20E%26M%20Entr%C3%BCmpelung%2C%20ich%20habe%20eine%20Anfrage" target="_blank">WhatsApp</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="services" class="container services">
+  <!-- Leistungen -->
+  <section id="leistungen" class="section">
+    <div class="container">
       <h3>Unsere Leistungen</h3>
-      <ul>
-        <li>Entrümpelung &amp; Haushaltsauflösung</li>
-        <li>Transporte &amp; Kleintransporte</li>
-        <li>Gebäudereinigung (Grund-, Unterhalts-, Bauendreinigung)</li>
-        <li>Fachgerechte Entsorgung (Sperrmüll, Elektroschrott, Sondermüll)</li>
-        <li>Gewerbe- und Betriebsauflösungen</li>
-      </ul>
-    </section>
+      <div class="cards">
+        <div class="card">Entrümpelung & Haushaltsauflösung</div>
+        <div class="card">Transporte & Kleintransporte</div>
+        <div class="card">Gebäudereinigung</div>
+        <div class="card">Fachgerechte Entsorgung</div>
+        <div class="card">Gewerbe- & Betriebsauflösungen</div>
+      </div>
+    </div>
+  </section>
 
-    <section id="about" class="container about">
+  <!-- Über uns -->
+  <section id="ueber-uns" class="section bg-light">
+    <div class="container">
       <h3>Über uns</h3>
       <p><strong>E&amp;M Entrümpelung</strong><br>
       Hauptstr. 156<br>
       53557 Bad Hönningen</p>
       <p>Telefon: <a href="tel:+4915159892963">0151 59892963</a><br>
       E-Mail: <a href="mailto:ementruempelung@web.de">ementruempelung@web.de</a></p>
-    </section>
+    </div>
+  </section>
 
-    <section id="pricing" class="container pricing">
+  <!-- Preise -->
+  <section id="preise" class="section">
+    <div class="container">
       <h3>Preise</h3>
       <p>Unsere Preise richten sich nach Besichtigung und Aufwand. Vereinbaren Sie einen kostenlosen Termin – wir beraten Sie fair und transparent.</p>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="container contact">
-      <h3>Kontakt &amp; Terminwunsch</h3>
-      <form id="contact-form" onsubmit="submitForm(event)">
+  <!-- Kontakt -->
+  <section id="kontakt" class="section bg-light">
+    <div class="container">
+      <h3>Kontakt & Terminwunsch</h3>
+      <form id="kontakt-formular" onsubmit="formularAbsenden(event)">
         <label for="name">Name</label>
         <input id="name" name="name" required />
 
-        <label for="phone">Telefon</label>
-        <input id="phone" name="phone" />
+        <label for="telefon">Telefon</label>
+        <input id="telefon" name="telefon" />
 
-        <label for="date">Wunschtermin</label>
-        <input type="date" id="date" name="date" required />
+        <label for="datum">Wunschtermin</label>
+        <input type="date" id="datum" name="datum" required />
 
-        <label for="message">Nachricht</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="nachricht">Nachricht</label>
+        <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
 
-        <button type="submit" class="btn primary">Anfrage senden</button>
-        <p class="muted small">Die Anfrage öffnet Ihr E-Mail-Programm. Sie bestätigen den Termin persönlich.</p>
+        <button type="submit" class="btn btn-primary">Anfrage senden</button>
+        <p class="small">Hinweis: Ihre Anfrage öffnet Ihr E-Mail-Programm. Den Termin bestätigen wir persönlich.</p>
       </form>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="site-footer">
+  <!-- Fußbereich -->
+  <footer class="footer">
     <div class="container">
-      <p>© E&amp;M Entrümpelung – Machmud Abdul Raouf<br>
-      Hauptstr. 156, 53557 Bad Hönningen</p>
+      <p>© E&amp;M Entrümpelung – Machmud Abdul Raouf</p>
+      <p>Hauptstr. 156, 53557 Bad Hönningen</p>
       <p>USt-ID: DE450668447 · Mitglied Handwerkskammer & Industrie- und Handelskammer</p>
     </div>
   </footer>
